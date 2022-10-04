@@ -24,21 +24,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: Title
+email: hikyj1701@gmail.com
+author: cozyYJ
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
 # * current year: {currentYear}
 # * author: {author} (Value is the same as site.author)
-# * copyright: (c) - ©
+# * copyright: (c) - ?
 # * copyleft: (cleft)
 # * sound recording copyright: (p) - ?
 #
 # For example:
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
-#   "Copyright © 2017-2021 Foobar"
+#   "Copyright ? 2017-2021 Foobar"
 #
 copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
 
@@ -156,7 +156,7 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
+#     heading: "You heading"
 #     subheading: "Your awesome subheading"
 #     banner: "Your image url"
 

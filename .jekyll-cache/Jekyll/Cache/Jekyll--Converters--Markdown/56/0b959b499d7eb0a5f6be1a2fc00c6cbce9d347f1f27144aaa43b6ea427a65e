@@ -1,0 +1,55 @@
+I"|<h2 id="problem">Problem</h2>
+
+<pre><code class="language-jAVA">import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("What is your name?: ");
+        String name = scanner.nextLine();
+        System.out.print("How old are you?: ");
+        int age = scanner.nextInt();
+        System.out.print("What is your favorite food?: ");
+        String food = scanner.nextLine();
+
+        System.out.println("Hello "+name);
+        System.out.println("You are "+age+" years old");
+        System.out.println("You like "+food);
+    }
+}
+</code></pre>
+
+<p>When you code like this above, you can’t type anything in food section.<br />
+Screen would show only the two sentences in the last paragraph (name, age) well, not last one (food).<br /></p>
+
+<h3 id="cause">Cause</h3>
+
+<p>This is because <em>nextLine()</em> method reads an entire line of text and stop when it reaches a new line character, which is \n.</p>
+
+<p>However, nextInt() doesn’t read \n, so it is delivered when you press Enter key. And nextLine() at food part only reads the \n, gets automatically proceeded to the next step that prints the inputted infos.</p>
+
+<h3 id="solution">Solution</h3>
+
+<p>Therefore, you should write like one of these:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"How old are you?: "</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+<span class="n">scanner</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span> <span class="c1">//clean the new line character (Enter key)</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"What is your favorite food?: "</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">food</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"How old are you?: "</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"What is your favorite food?: "</span><span class="o">);</span>
+<span class="nc">String</span> <span class="n">food</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">();</span> <span class="c1">//to not read \n</span>
+</code></pre></div></div>
+
+<h2 id="result">Result</h2>
+
+<p>Then it will show what you expected.
+<img src="https://user-images.githubusercontent.com/79247938/194130956-57385125-3767-4dcf-9df4-4986b571cc9c.png" alt="result" /></p>
+:ET

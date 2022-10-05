@@ -65,3 +65,8 @@ String food = scanner.next(); //to not read \n
 Then it will show what you expected.
 
 ![expected_result](https://user-images.githubusercontent.com/79247938/194130956-57385125-3767-4dcf-9df4-4986b571cc9c.png)
+
+## Source
+
+[Java Tutorial by Bro Code](https://www.youtube.com/watch?v=xk4_1vDrzzo&t=2204s)
+36:42 - 44:40

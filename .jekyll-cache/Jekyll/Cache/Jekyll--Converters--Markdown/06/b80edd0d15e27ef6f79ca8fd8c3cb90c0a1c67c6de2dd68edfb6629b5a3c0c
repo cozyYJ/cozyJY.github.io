@@ -1,0 +1,19 @@
+I"i<h2 id="problem">Problem</h2>
+
+<p>After writing <em>(JAVA) Can’t input using nextLine()</em>, this new buddy was well generated in my local server (localhost:4000), unfortunately not in the real github page… :(</p>
+
+<p>It took around 2hrs to fix this ordeal!</p>
+
+<h3 id="solution">Solution</h3>
+
+<ul>
+  <li>Check that the form of the file name (<strong>YEAR-MONTH-DAY-title.md</strong>) is written correctly.</li>
+  <li>Try adding <strong>published: true</strong> to the option of a page section (section containing layout, title, categories, etc.).</li>
+  <li>Try adding <strong>future: true</strong> to <em>_config.yml</em></li>
+  <li>Try editing <em>index.html</em> by adding some tirivial changes like one space.</li>
+</ul>
+
+<h2 id="source">Source</h2>
+
+<p><a href="https://devyuseon.github.io/github%20blog/githubblog-post-not-shown/">devyuseon.github.io</a></p>
+:ET

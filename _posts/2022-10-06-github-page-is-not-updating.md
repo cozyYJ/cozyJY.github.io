@@ -2,7 +2,7 @@
 layout: post
 title: Github page is not updating a new post
 subtitle: Life is pain you know...
-categories: Git, Github
+categories: Git Github
 tags: [Git, Github]
 published: true
 ---

@@ -4,6 +4,7 @@ title: (JAVA) Can't input using nextLine()
 subtitle: Difference between next() and nextLine()
 categories: JAVA
 tags: [JAVA, user_input]
+published: true
 ---
 
 ## Problem

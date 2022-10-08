@@ -1,0 +1,25 @@
+I"Û<h2 id="problem">Problem</h2>
+
+<p>What is the precise reason for adding sc.close(); when I use Scanner class?</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Score: "</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">score</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+        <span class="n">sc</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="reason">Reason</h2>
+
+<p><img src="https://user-images.githubusercontent.com/79247938/194723758-b0e4823d-664a-4555-af2e-2b0cf95b9fb3.png" alt="reason" /></p>
+
+<h2 id="source">Source</h2>
+
+<p><a href="https://kin.naver.com/qna/detail.nhn?d1id=1&amp;dirId=1040201&amp;docId=384617557&amp;qb=c2M/Pz8/ID8/Pz8=&amp;enc=utf8&amp;section=kin.qna&amp;rank=5&amp;search_sort=0&amp;spq=0">java_sc.close();</a></p>
+:ET

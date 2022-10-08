@@ -2,8 +2,8 @@
 layout: post
 title: (BOJ) Applying Conditional Operator
 subtitle: MULTIPLE conditional operator!
-categories: BOJ JAVA
-tags: [BOJ, JAVA]
+categories: BOJ JAVA C
+tags: [BOJ, JAVA, C]
 published: true
 ---
 

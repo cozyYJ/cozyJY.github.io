@@ -34,6 +34,16 @@ public class Main {
 }
 ```
 
+```c
+#include <stdio.h>
+
+int main() {
+    int score;
+    scanf_s("%d", &score);
+    printf("%c", (score>=90)? 'A': (score>=80)? 'B': (score>=70)? 'C': (score>=60)? 'D': 'F');
+}
+```
+
 ## Result
 
 Normal and desirable result comes up.

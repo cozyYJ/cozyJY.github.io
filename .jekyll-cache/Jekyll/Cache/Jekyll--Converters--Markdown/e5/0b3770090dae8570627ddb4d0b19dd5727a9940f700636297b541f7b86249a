@@ -1,4 +1,4 @@
-I"¥<h2 id="problem">Problem</h2>
+I"ð<h2 id="problem">Problem</h2>
 
 <p><strong>BOJ No.9498</strong></p>
 
@@ -7,7 +7,7 @@
 <h3 id="solution">Solution</h3>
 
 <p>Surely we can solve this by using if statements.<br />
-But hereâ€™s a brand new perspective (for me) on this, that is using a multiple conditional operator.</p>
+But hereâ€™s a brand new perspective (for me) on this; using a multiple conditional operator.</p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
 
@@ -22,6 +22,15 @@ But hereâ€™s a brand new perspective (for me) on this, that is using a multiple 
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">((</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">90</span><span class="o">)?</span> <span class="s">"A"</span><span class="o">:</span> <span class="o">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">80</span><span class="o">)?</span> <span class="s">"B"</span><span class="o">:</span> <span class="o">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">70</span><span class="o">)?</span> <span class="s">"C"</span><span class="o">:</span> <span class="o">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">60</span><span class="o">)?</span> <span class="s">"D"</span><span class="o">:</span> <span class="s">"F"</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">score</span><span class="p">;</span>
+    <span class="n">scanf_s</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">score</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span> <span class="p">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">90</span><span class="p">)</span><span class="o">?</span> <span class="sc">'A'</span><span class="o">:</span> <span class="p">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">80</span><span class="p">)</span><span class="o">?</span> <span class="sc">'B'</span><span class="o">:</span> <span class="p">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">70</span><span class="p">)</span><span class="o">?</span> <span class="sc">'C'</span><span class="o">:</span> <span class="p">(</span><span class="n">score</span><span class="o">&gt;=</span><span class="mi">60</span><span class="p">)</span><span class="o">?</span> <span class="sc">'D'</span><span class="o">:</span> <span class="sc">'F'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <h2 id="result">Result</h2>

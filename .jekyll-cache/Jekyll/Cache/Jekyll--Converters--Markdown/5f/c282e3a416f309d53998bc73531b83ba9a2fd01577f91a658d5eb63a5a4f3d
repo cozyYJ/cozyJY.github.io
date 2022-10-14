@@ -1,0 +1,15 @@
+I"Ê<h2 id="how-to-declare-an-array">How to Declare an Array</h2>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">DATATYPE[] VARIABLE = {DATA1, DATA2, DATA3, ...};</code></p>
+  </li>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DATATYPE[] VARIABLE = new DATATYPE[length_of_array];
+DATATYPE[0] = value;
+DATATYPE[1] = value;
+...
+</code></pre></div>    </div>
+  </li>
+</ol>
+:ET
